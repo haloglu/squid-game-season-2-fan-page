@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Squid Game - Sezon 2</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Sidebar with image -->
+    <nav class="sidebar">
+      <div class="bgimg"></div>
+      <a href="https://www.netflix.com" target="_blank" class="watch-button">
+        <img
+          src="./assets/img/netflix-logo.svg"
+          alt="Netflix"
+          class="netflix-icon"
+        />
+      </a>
+    </nav>
+
+    <!-- Hidden Sidebar -->
+    <nav class="hidden-sidebar" id="mySidebar">
+      <button class="close-btn" onclick="toggleNav()">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul>
+        <li><a href="#about" onclick="toggleNav()">Dizi Hakkında</a></li>
+        <li><a href="#gallery" onclick="toggleNav()">Galeri</a></li>
+        <li><a href="#actors" onclick="toggleNav()">Oyuncular</a></li>
+        <li><a href="#trailer" onclick="toggleNav()">Fragman</a></li>
+      </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="main-content">
+      <button class="menu-btn" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Header -->
+      <header id="home">
+        <img
+          src="./assets/img/squid-game-logo.svg"
+          alt="Squid Game Logo"
+          class="logo"
+        />
+        <div class="backgroundimg" style="display: block"></div>
+        <p>
+          Squid Game evrenine adım atmaya hazır mısın? <br />
+          Kendi oyuncu numaranı oluştur ve bu heyecana katıl!
+        </p>
+        <button class="choose-number">Oyuncu Numaranı Oluştur</button>
+        <div id="player-greeting"></div>
+
+        <!-- Arka plan müziği -->
+        <audio id="bg-music">
+          <source src="./assets/audio/squid-game.mp3" type="audio/mp3" />
+          Tarayıcınız bu ses dosyasını desteklemiyor!
+        </audio>
+      </header>
+      <!-- Header -->
+
+      <hr class="section-divider" />
+      <!-- About -->
+      <section id="about">
+        <h2>Squid Game Hakkında</h2>
+        <p>
+          <strong>Squid Game</strong>, 2021 yılında Koreli bir dizi olarak dünya
+          çapında büyük bir etki yarattı. Netflix, dizinin ikinci sezonunun
+          onaylandığını duyurdu ve hayranlar büyük bir heyecanla beklemeye
+          başladı. İlk sezon, hayatta kalma oyunları üzerinden toplumun çeşitli
+          yönlerini sorgulayan, gerilim dolu bir hikaye sundu.
+          <span
+            >Toplumsal eşitsizlik, hayatta kalma içgüdüsü ve bireysel
+            değerler</span
+          >
+          gibi derin temaları işleyerek izleyiciyi derinden etkiledi.
+        </p>
+
+        <h3>Karakterler ve Derinlikleri</h3>
+        <p>
+          Dizinin karakterleri, izleyicilerin duygusal bağ kurmasına olanak
+          tanıyacak kadar derinlemesine işlendi. Her karakter, kendi içsel
+          çatışmalarını ve toplumla olan ilişkilerini anlamaya çalışıyor. Bu da,
+          onları daha gerçekçi ve ilgi çekici hale getiriyor.
+        </p>
+
+        <h3>Oyunlar ve Toplumsal Mesajlar</h3>
+        <p>
+          Her bir hayatta kalma oyunu, sadece fiziksel mücadeleyi değil, aynı
+          zamanda moral değerleri ve toplumsal yapıyı da test ediyor.
+          İzleyiciler, oyunların ilerledikçe insan doğasının ne kadar kırılgan
+          olabileceğini görme fırsatı buluyorlar. Dizi,
+          <span>sistemsel eşitsizlik, yoksulluk ve umutsuzluk</span> gibi modern
+          dünyanın karanlık yönlerine derinlemesine bir bakış sunuyor.
+        </p>
+
+        <h3>Popülerlik ve Kültürel Fenomen</h3>
+        <p>
+          Squid Game, sadece Kore'de değil, dünya çapında kültürel bir fenomen
+          haline geldi. Dizinin başarısı, izleyicilerin sosyal medya ve günlük
+          yaşamlarında sıklıkla referans verdiği bir kültürel öğe haline
+          gelmesine yol açtı. Karakterlerin kıyafetleri ve semboller, popüler
+          kültürün bir parçası oldu.
+        </p>
+
+        <h3>İkinci Sezon Hakkında</h3>
+        <p>
+          Netflix, dizinin ikinci sezonunun duyurusunu yaptı ve hayranlar
+          sabırsızlıkla beklemeye başladı. Yeni sezon, bir yandan öncekilerin
+          hikayelerine devam ederken, diğer yandan yeni karakterler ve olaylarla
+          daha da karmaşık hale geliyor. <span>Squid Game</span> dünyasının
+          derinliklerine inmeyi sürdürüyor ve izleyicilere daha fazla gerilim ve
+          heyecan vaat ediyor.
+        </p>
+
+        <br />
+        <p>
+          Dizinin ikinci sezonuyla ilgili daha fazla bilgi almak için
+          <a
+            href="https://www.netflix.com/tudum/articles/squid-game-season-2-confirmed"
+            target="_blank"
+            >Netflix'teki makaleye</a
+          >
+          göz atabilirsiniz.
+        </p>
+
+        <p class="netflix-watch-btn-container">
+          <a
+            href="https://www.netflix.com/tr/title/81040344"
+            class="netflix-watch-button"
+          >
+            <img
+              src="./assets/img/netflix.svg"
+              alt="Netflix Logo"
+              class="netflix-logo"
+            />
+            <span>Netflix'te İzle</span>
+          </a>
+        </p>
+      </section>
+      <!-- About -->
+
+      <hr class="section-divider" />
+      <!-- Gallery Section -->
+      <section id="gallery">
+        <h2>Galeri</h2>
+        <p class="gallery-description">
+          <span class="highlight">Squid Game</span> dizisinin 2. sezonu, büyük
+          bir heyecanla karşılandı ve dünya çapında dikkat topladı. <br />
+          Bu galeride, 2. sezonun en çarpıcı anlarından bazılarını ve yeni
+          karakterlerle birlikte geliştirilen görsel atmosferi keşfedeceksiniz.
+          Her bir kare, dizinin gerilim dolu dünyasını ve karakterlerinin
+          karmaşık duygusal yolculuklarını yansıtıyor.
+        </p>
+        <div class="gallery-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="./assets/img/1.jpg" data-fancybox="gallery">
+                <img src="./assets/img/1.jpg" alt="Squid Game Wallpaper 1" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./assets/img/2.jpg" data-fancybox="gallery">
+                <img src="./assets/img/2.jpg" alt="Squid Game Wallpaper 2" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./assets/img/3.jpg" data-fancybox="gallery">
+                <img src="./assets/img/3.jpg" alt="Squid Game Wallpaper 3" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./assets/img/4.jpg" data-fancybox="gallery">
+                <img src="./assets/img/4.jpg" alt="Squid Game Wallpaper 4" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./assets/img/5.jpg" data-fancybox="gallery">
+                <img src="./assets/img/5.jpg" alt="Squid Game Wallpaper 5" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./assets/img/6.jpg" data-fancybox="gallery">
+                <img src="./assets/img/6.jpg" alt="Squid Game Wallpaper 6" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./assets/img/7.jpg" data-fancybox="gallery">
+                <img src="./assets/img/7.jpg" alt="Squid Game Wallpaper 7" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./assets/img/8.jpg" data-fancybox="gallery">
+                <img src="./assets/img/8.jpg" alt="Squid Game Wallpaper 8" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./assets/img/9.jpg" data-fancybox="gallery">
+                <img src="./assets/img/9.jpg" alt="Squid Game Wallpaper 9" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./assets/img/10.jpg" data-fancybox="gallery">
+                <img src="./assets/img/10.jpg" alt="Squid Game Wallpaper 10" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./assets/img/11.jpg" data-fancybox="gallery">
+                <img src="./assets/img/11.jpg" alt="Squid Game Wallpaper 11" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="./assets/img/12.jpg" data-fancybox="gallery">
+                <img src="./assets/img/12.jpg" alt="Squid Game Wallpaper 12" />
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <!-- Gallery Section -->
+
+      <hr class="section-divider" />
+      <!-- Actors Section -->
+      <section id="actors">
+        <h2>Oyuncular</h2>
+        <p class="actors-description">
+          Squid Game'in başarısında sadece senaryo ve görsel unsurlar değil,
+          oyuncuların güçlü performansları da etkili. Karakterlerini
+          derinlemesine canlandıran her oyuncu, izleyiciyi her sahnede
+          etkiliyor. İşte dizinin unutulmaz oyuncularıyla daha yakından tanışın.
+        </p>
+        <div class="actors-container">
+          <!-- Gi-hun (Player 456) -->
+          <div class="actor-card">
+            <img
+              src="./assets/img/gi-hun.jpg"
+              alt="Lee Jung-jae as Gi-hun (Player 456)"
+            />
+            <h3>Lee Jung-jae - Gi-hun (Player 456)</h3>
+            <p>
+              Gi-hun, eski bir kumar bağımlısı olup kızını kurtarmak için Squid
+              Game'e katılır. Sezon 2'de, bu oyunları sonlandırmak için her şeyi
+              yapmaya karar verir.
+            </p>
+          </div>
+
+          <!-- Myung-gi (Player 333) -->
+          <div class="actor-card">
+            <img
+              src="./assets/img/myung-gi.jpg"
+              alt="Yim Si-wan as Myung-gi (Player 333)"
+            />
+            <h3>Yim Si-wan - Myung-gi (Player 333)</h3>
+            <p>
+              Myung-gi, büyük yatırım kayıpları yaşayan bir kripto
+              influencerıdır. Squid Game'den çıkış yolu bulmak için katılır.
+            </p>
+          </div>
+
+          <!-- Dae-ho (Player 388) -->
+          <div class="actor-card">
+            <img
+              src="./assets/img/dae-ho.jpg"
+              alt="Kang Ha-neul as Dae-ho (Player 388)"
+            />
+            <h3>Kang Ha-neul - Dae-ho (Player 388)</h3>
+            <p>
+              Dae-ho, yeni bir yarışmacıdır ve Gi-hun için potansiyel bir
+              müttefik olabilir. Oyunlar sırasında karşıt bir tehdit oluşturur.
+            </p>
+          </div>
+
+          <!-- Gyeong-seok (Player 246) -->
+          <div class="actor-card">
+            <img
+              src="./assets/img/gyeong-seok.jpg"
+              alt="Lee Jin-uk as Gyeong-seok (Player 246)"
+            />
+            <h3>Lee Jin-uk - Gyeong-seok (Player 246)</h3>
+            <p>
+              Gyeong-seok, ailesi için her şeyini feda etmeye hazır, sevgi dolu
+              bir babadır. Oyunlar için büyük riskler alır.
+            </p>
+          </div>
+
+          <!-- Yong-sık (Player 007) -->
+          <div class="actor-card">
+            <img
+              src="./assets/img/yong-sk.jpg"
+              alt="Yang Dong-geun as Yong-sık (Player 007)"
+            />
+            <h3>Yang Dong-geun - Yong-sık (Player 007)</h3>
+            <p>
+              Yong-sık, kumar borçlarıyla boğulmuş biridir. Squid Game'de, bir
+              sevdiğiyle aynı yarışmada olduğunu öğrenir.
+            </p>
+          </div>
+
+          <!-- Geum-ja (Player 149) -->
+          <div class="actor-card">
+            <img
+              src="./assets/img/geum-ja.jpg"
+              alt="Kang Ae-sim as Geum-ja (Player 149)"
+            />
+            <h3>Kang Ae-sim - Geum-ja (Player 149)</h3>
+            <p>
+              Geum-ja, zor durumda olan bir yakınını kurtarmak için Squid Game'e
+              katılır. Kararlı ve güçlü bir kadındır.
+            </p>
+          </div>
+
+          <!-- Jung-bae (Player 390) -->
+          <div class="actor-card">
+            <img
+              src="./assets/img/jung-bae.jpg"
+              alt="Lee Seo-hwan as Jung-bae (Player 390)"
+            />
+            <h3>Lee Seo-hwan - Jung-bae (Player 390)</h3>
+            <p>
+              Jung-bae, Gi-hun'un eski iş arkadaşıdır ve Squid Game'de yeniden
+              karşılaşırlar. Oyunlarda önemli bir rol oynar.
+            </p>
+          </div>
+
+          <!-- Jun-hee (Player 222) -->
+          <div class="actor-card">
+            <img
+              src="./assets/img/jun-hee.jpg"
+              alt="Jo Yuri as Jun-hee (Player 222)"
+            />
+            <h3>Jo Yuri - Jun-hee (Player 222)</h3>
+            <p>
+              Jun-hee, kötü bir yatırım sonucu büyük borçlara batmış bir
+              oyuncudur. Güvendiği biri onu bu duruma sokar.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Actors Section -->
+
+      <hr class="section-divider" />
+      <!-- Trailer -->
+      <section id="trailer">
+        <h2>Squid Game 2. Sezon Fragmanı</h2>
+        <p>
+          Merakla beklenen Squid Game 2. sezon fragmanını izleyin! İlk sezonun
+          büyük başarısından sonra, hayatta kalma mücadelesi yeniden başlıyor.
+          Yeni karakterler, daha zorlu oyunlar ve heyecan dolu anlar
+          izleyicileri bekliyor. Gerilim ve aksiyon dolu bir sezon, tüm dünyada
+          tartışmaları tekrar alevlendirecek gibi görünüyor!
+        </p>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/TW_PnzgWeac"
+            title="Squid Game 2. Sezon Fragmanı"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+      <!-- Trailer -->
+
+      <hr class="section-divider" />
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Squid Game Fan Sayfası | Tüm Hakları Saklıdır.</p>
+          <ul class="footer-links">
+            <li>
+              <a
+                href="https://www.instagram.com/squidgamenetflix/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/sertachaloglu/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/squidgamenetflix/"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://x.com/squidgame" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="www.youtube.com/watch?v=TW_PnzgWeac" target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.netflix.com/tr/title/81040344"
+                target="_blank"
+              >
+                <img src="./assets/img/netflix.svg" alt="Netflix" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script defer src="./assets/js/script.js"></script>
+</html>
