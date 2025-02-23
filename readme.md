@@ -13,7 +13,7 @@ This project focuses on creating a dynamic, user-friendly fan page dedicated to 
 - Fun, interactive polls and quizzes 🎯
 - Discussions and predictions about upcoming episodes and future seasons 💬
 
-The goal is to bring together the Squid Game community, allowing fans to engage and share their thoughts on the new season in an easy and interactive way. The page is designed to be visually appealing and easily navigable, with content that’s constantly updated as new episodes are released.
+The goal is to bring together the _Squid Game_ community, allowing fans to engage and share their thoughts on the new season in an easy and interactive way. The page is designed to be visually appealing and easily navigable, with content that’s constantly updated as new episodes are released.
 
 ## 🛠️ Technologies Used
 
@@ -34,6 +34,14 @@ This project is built using the following technologies:
 ## 🎨 Project Design
 
 The design of the fan page draws heavily from the iconic visuals of _Squid Game_. From the ominous red and black color scheme to the geometric patterns, every element of the page is meant to evoke the feeling of being in the dystopian world of the game. The layout is simple and user-friendly, focusing on delivering content with minimal distractions.
+
+## 🌐 Live Demo (Netlify Deployment)
+
+The project is live and hosted on **Netlify**, where you can explore the fan page and interact with all its features. Check it out here:
+
+🔗 [Squid Game Season 2 Fan Page](https://squidgameseason2.netlify.app)
+
+Feel free to explore, participate in polls, and immerse yourself in the world of _Squid Game_!
 
 ## 🚀 How to Run the Project Locally
 
