@@ -38,6 +38,15 @@
     </nav>
 
     <!-- Hidden Sidebar -->
+    <nav class="main-navbar">
+      <ul>
+        <li><a href="#about">Dizi Hakkında</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#actors">Oyuncular</a></li>
+        <li><a href="#trailer">Fragman</a></li>
+      </ul>
+    </nav>
+
     <nav class="hidden-sidebar" id="mySidebar">
       <button class="close-btn" onclick="toggleNav()">
         <i class="fas fa-times"></i>
@@ -148,6 +157,7 @@
           <a
             href="https://www.netflix.com/tr/title/81040344"
             class="netflix-watch-button"
+            target="_blank"
           >
             <img
               src="./assets/img/netflix.svg"
@@ -253,8 +263,8 @@
           etkiliyor. İşte dizinin unutulmaz oyuncularıyla daha yakından tanışın.
         </p>
         <div class="actors-container">
-          <!-- Gi-hun (Player 456) -->
-          <div class="actor-card">
+          <div class="actor-card" data-favorite="false">
+            <i class="favorite-icon fas fa-star"></i>
             <img
               src="./assets/img/gi-hun.jpg"
               alt="Lee Jung-jae as Gi-hun (Player 456)"
@@ -267,8 +277,8 @@
             </p>
           </div>
 
-          <!-- Myung-gi (Player 333) -->
-          <div class="actor-card">
+          <div class="actor-card" data-favorite="false">
+            <i class="favorite-icon fas fa-star"></i>
             <img
               src="./assets/img/myung-gi.jpg"
               alt="Yim Si-wan as Myung-gi (Player 333)"
@@ -279,9 +289,8 @@
               influencerıdır. Squid Game'den çıkış yolu bulmak için katılır.
             </p>
           </div>
-
-          <!-- Dae-ho (Player 388) -->
-          <div class="actor-card">
+          <div class="actor-card" data-favorite="false">
+            <i class="favorite-icon fas fa-star"></i>
             <img
               src="./assets/img/dae-ho.jpg"
               alt="Kang Ha-neul as Dae-ho (Player 388)"
@@ -292,9 +301,8 @@
               müttefik olabilir. Oyunlar sırasında karşıt bir tehdit oluşturur.
             </p>
           </div>
-
-          <!-- Gyeong-seok (Player 246) -->
-          <div class="actor-card">
+          <div class="actor-card" data-favorite="false">
+            <i class="favorite-icon fas fa-star"></i>
             <img
               src="./assets/img/gyeong-seok.jpg"
               alt="Lee Jin-uk as Gyeong-seok (Player 246)"
@@ -305,9 +313,8 @@
               bir babadır. Oyunlar için büyük riskler alır.
             </p>
           </div>
-
-          <!-- Yong-sık (Player 007) -->
-          <div class="actor-card">
+          <div class="actor-card" data-favorite="false">
+            <i class="favorite-icon fas fa-star"></i>
             <img
               src="./assets/img/yong-sk.jpg"
               alt="Yang Dong-geun as Yong-sık (Player 007)"
@@ -318,9 +325,8 @@
               sevdiğiyle aynı yarışmada olduğunu öğrenir.
             </p>
           </div>
-
-          <!-- Geum-ja (Player 149) -->
-          <div class="actor-card">
+          <div class="actor-card" data-favorite="false">
+            <i class="favorite-icon fas fa-star"></i>
             <img
               src="./assets/img/geum-ja.jpg"
               alt="Kang Ae-sim as Geum-ja (Player 149)"
@@ -331,9 +337,8 @@
               katılır. Kararlı ve güçlü bir kadındır.
             </p>
           </div>
-
-          <!-- Jung-bae (Player 390) -->
-          <div class="actor-card">
+          <div class="actor-card" data-favorite="false">
+            <i class="favorite-icon fas fa-star"></i>
             <img
               src="./assets/img/jung-bae.jpg"
               alt="Lee Seo-hwan as Jung-bae (Player 390)"
@@ -344,9 +349,8 @@
               karşılaşırlar. Oyunlarda önemli bir rol oynar.
             </p>
           </div>
-
-          <!-- Jun-hee (Player 222) -->
-          <div class="actor-card">
+          <div class="actor-card" data-favorite="false">
+            <i class="favorite-icon fas fa-star"></i>
             <img
               src="./assets/img/jun-hee.jpg"
               alt="Jo Yuri as Jun-hee (Player 222)"

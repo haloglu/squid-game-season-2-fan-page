@@ -95,6 +95,44 @@ section:first-of-type {
 }
 
 /* Sidebar Hidden */
+.main-navbar {
+  display: none;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 20px 0; /* İç boşluğu artırdık */
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 40%;
+}
+
+.main-navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navbar li {
+  margin: 0 20px; /* Menü öğeleri arasındaki boşluğu artırdık */
+}
+
+.main-navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 18px; /* Bağlantı iç boşluğunu artırdık */
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.main-navbar a:hover {
+  background-color: #d02a4b;
+  color: white;
+}
+
 .hidden-sidebar {
   width: 60%;
   height: 100vh;
@@ -418,6 +456,7 @@ header#home p {
   transition: transform 0.3s ease;
   max-width: 100%;
   margin: 0 auto;
+  position: relative; /* İkon için */
 }
 
 .actor-card:hover {
@@ -441,6 +480,23 @@ header#home p {
   padding: 0 10px;
 }
 
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white; /* Yıldız rengi beyaz */
+  transition: color 0.3s ease;
+}
+
+.favorite-icon:hover {
+  color: #ccc; /* Yıldız rengi (hover) */
+}
+
+.actor-card[data-favorite="true"] {
+  background-color: #28a745; /* Seçilen kart rengi (squid game yeşili) */
+}
 /* Actor Cards */
 
 /* Trailer */
@@ -545,6 +601,20 @@ header#home p {
 /* Footer */
 
 /* Responsive */
+
+@media (min-width: 1350px) {
+  .hidden-sidebar {
+    display: none;
+  }
+
+  .main-navbar {
+    display: block;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 1350px) {
   .main-content {
